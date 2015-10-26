@@ -5,8 +5,6 @@
  */
 package com.fpt.entity;
 
-import com.fpt.entity.Product;
-import java.util.ArrayList;
 import java.util.List;
 import javax.swing.table.AbstractTableModel;
 

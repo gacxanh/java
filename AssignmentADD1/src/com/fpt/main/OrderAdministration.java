@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /**
@@ -34,6 +35,7 @@ public class OrderAdministration extends javax.swing.JFrame {
      */
     public OrderAdministration() throws ClassNotFoundException, SQLException {
         initComponents();
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         ot = new OrderTable(list);
         orderTable.setModel(ot);
     }

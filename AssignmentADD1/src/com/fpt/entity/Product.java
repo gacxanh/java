@@ -16,6 +16,15 @@ public class Product {
     private double price;
     private boolean bool = false;
     private int qts = 1;
+    private boolean isDelete = false;
+
+    public boolean isIsDelete() {
+        return isDelete;
+    }
+
+    public void setIsDelete(boolean isDelete) {
+        this.isDelete = isDelete;
+    }
 
     public int getQts() {
         return qts;

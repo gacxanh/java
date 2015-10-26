@@ -130,13 +130,13 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        this.removeAll();
-        this.setVisible(false);
-        try { 
+        
+        try {
             productTable = new ProductManagement();
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
+        this.setVisible(false);
         productTable.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
