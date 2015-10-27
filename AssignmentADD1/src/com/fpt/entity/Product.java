@@ -51,6 +51,11 @@ public class Product {
         this.name = name;
         this.price = price;
     }
+    
+    public Product(String name, double price){
+        this.name = name;
+        this.price = price;
+    }
 
     public int getID() {
         return ID;

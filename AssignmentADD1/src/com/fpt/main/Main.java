@@ -22,6 +22,7 @@ public class Main extends javax.swing.JFrame {
     ProductTableModel pm;
     
     //New JFrame
+    private JFrame aboutUs;
     private JFrame productTable;
     private JFrame orderAdministration;
 
@@ -75,6 +76,11 @@ public class Main extends javax.swing.JFrame {
         });
 
         jButton4.setText("About Us!");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -115,7 +121,7 @@ public class Main extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        this.removeAll();
+
         this.setVisible(false);
         try {
             orderAdministration = new OrderAdministration();
@@ -139,6 +145,12 @@ public class Main extends javax.swing.JFrame {
         this.setVisible(false);
         productTable.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        aboutUs = new AboutUs();
+        this.setVisible(false);
+        aboutUs.setVisible(true);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -68,7 +68,6 @@ public class ProductTableModel extends AbstractTableModel {
                 break;
             case 1:
                 row.setName(aValue.toString());
-                System.out.println(data.get(rowIndex).getName());
                 break;
             case 2:
                 row.setPrice(Double.parseDouble(aValue.toString()));

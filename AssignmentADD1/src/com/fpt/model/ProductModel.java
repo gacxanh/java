@@ -58,7 +58,7 @@ public class ProductModel {
     public boolean deleteProduct(Product p){
         try {
             con = db.Connect();
-            String sqlQuery = "delete Product where id = ?";
+            String sqlQuery = "delete from Product where id = ?";
             PreparedStatement pst = con.prepareStatement(sqlQuery);
             pst.setInt(1, p.getID());
             pst.executeUpdate();
